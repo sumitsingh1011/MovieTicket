@@ -1,12 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+
 import './App.css'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import HomePage from './pages/user/HomePage';
 import Details from './pages/user/Details';
+import {Toaster} from 'react-hot-toast'
 import MyBooking from './pages/user/MyBooking';
 import SeatSelection from './pages/user/SeatSelection';
 import MainDashborde from './pages/admin/MainDashborde';
@@ -17,12 +18,14 @@ import ListBookings from './pages/admin/ListBookings';
 import MoviesAll from './pages/user/MoviesAll'
 
 function App() {
-  const [count, setCount] = useState(0)
+  //const [count, setCount] = useState(0)
 
   const isAdminRoute = useLocation().pathname.startsWith("/admin")
    
   return (
+    
   <div className="min-h-screen flex flex-col bg-black text-white">
+    <Toaster/>
     {!isAdminRoute && <Navbar />}
 
     <main className="flex-1">

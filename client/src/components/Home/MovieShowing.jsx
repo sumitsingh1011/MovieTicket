@@ -3,7 +3,7 @@
 import { dummyShowsData } from '../../assets/assets'
 import MovieCard from './MovieCard'
 import { ArrowRight } from 'lucide-react'
-import { assets } from './../../assets/assets';
+import BlurCircle from '../../../../frontend/src/component/BlurCircle';
 import { useNavigate } from 'react-router-dom';
 function MovieShowing() {
 
@@ -14,6 +14,7 @@ function MovieShowing() {
     return (
         <div className='text-white mt-16'>
             <div className='flex justify-between px-3 sm:px-4 md:px-10 lg:px-15 lg:px-20 xl:mx-28'>
+                <BlurCircle top='0' right='-80px'/>
                 <p>Now Showing</p>
                 <p className='flex gap-2'>View All<ArrowRight /> </p>
             </div>

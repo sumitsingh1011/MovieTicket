@@ -1,5 +1,5 @@
 import { Show } from "../Models/Show.js"
-import { User } from '../Models/user.model.js';
+import { User } from '../Models/usermodel.js';
 import { Booking } from '../Models/booking.js';
 
 

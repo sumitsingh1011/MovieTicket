@@ -1,7 +1,7 @@
 import React from 'react'
 import { ChevronLeft } from 'lucide-react'
 
-function DateSelection({ dateTime, id }) {
+function DateSelection({ dateTime }) {
     console.log(dateTime)
     return (
         <div id='dateSelect' className='pt-32'>
@@ -26,7 +26,7 @@ function DateSelection({ dateTime, id }) {
                     </div>
                 </div>
                             <p className='bg-primary text-white px-8 py-2 mt-6 rounded hover:bg-primary/90
-                            transition-all cursor-pointer '>Book Noe</p>
+                            transition-all cursor-pointer '>Book Now</p>
             </div>
             Date Slection
         </div>
