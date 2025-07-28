@@ -6,7 +6,7 @@ import BlurCircle from '../component/BlurCircle';
 import MovieCard from '../component/MovieCart';
 
 import timeformat from '../library/Timeformate';
-import DateSelect from '../component/dateSelect';
+import DateSelect from '../component/DateSelect';
 import Loading from '../component/Loading';
 
 
